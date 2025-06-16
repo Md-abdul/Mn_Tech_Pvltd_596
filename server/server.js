@@ -15,11 +15,22 @@ dotenv.config();
 connectDB();
 
 // Middleware
+// app.use(
+//   cors({
+//     origin: [
+//       process.env.CLIENT_URL || "http://localhost:3000",
+//       "http://localhost:5173",
+//     ],
+//     credentials: true,
+//   })
+// );
+
+// Middleware
 app.use(
   cors({
     origin: [
-      process.env.CLIENT_URL || "http://localhost:3000",
-      "http://localhost:5173",
+      process.env.CLIENT_URL || "https://mn-tech-pvltd-596-1.onrender.com",
+      "https://manglantechnology.netlify.app/",
     ],
     credentials: true,
   })
