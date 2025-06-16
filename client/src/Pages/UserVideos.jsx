@@ -24,7 +24,7 @@ const UserVideos = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          "http://localhost:3001/api/video_upload/user",
+          "https://mn-tech-pvltd-596-1.onrender.com/api/video_upload/user",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -68,7 +68,7 @@ const UserVideos = () => {
         // Only update if there's significant progress (at least 5 seconds)
         if (currentTime > lastUpdateTimes.current[videoId]) {
           const response = await axios.post(
-            `http://localhost:3001/api/users/${videoId}/watch-time`,
+            `https://mn-tech-pvltd-596-1.onrender.com/api/users/${videoId}/watch-time`,
             {
               timeWatched: currentTime,
             },

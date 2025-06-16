@@ -58,7 +58,7 @@ const UserProfile = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:3001/api/users/${user._id}`,
+        `https://mn-tech-pvltd-596-1.onrender.com/api/users/${user._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -77,7 +77,7 @@ const UserProfile = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:3001/api/users/${user._id}/referral-stats`,
+        `https://mn-tech-pvltd-596-1.onrender.com/api/users/${user._id}/referral-stats`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

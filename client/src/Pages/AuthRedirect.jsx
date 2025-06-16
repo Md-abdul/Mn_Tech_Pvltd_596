@@ -40,7 +40,7 @@ const AuthRedirect = () => {
 
         setStatus("Fetching your profile...");
         const response = await axios.get(
-          `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001'}/api/users/${userId}`,
+          `${import.meta.env.VITE_API_BASE_URL || 'https://mn-tech-pvltd-596-1.onrender.com'}/api/users/${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -153,3 +153,4 @@ const AuthRedirect = () => {
 };
 
 export default AuthRedirect;
+//manglantechnology
