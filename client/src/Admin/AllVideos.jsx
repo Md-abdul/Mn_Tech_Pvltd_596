@@ -11,7 +11,7 @@ const AllVideos = () => {
       try {
         const token = localStorage.getItem("adminToken");
         const response = await axios.get(
-          "https://mn-tech-pvltd-596-1.onrender.com/api/video_upload",
+          "https://mn-tech-pvltd-596.onrender.com/api/video_upload",
           {
             headers: {
               Authorization: `Bearer ${token}`,

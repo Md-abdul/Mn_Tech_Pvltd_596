@@ -24,16 +24,15 @@ const AdminDashboard = () => {
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-//https://mn-tech-pvltd-596-1.onrender.com/
   useEffect(() => {
     const fetchStats = async () => {
       try {
         const token = localStorage.getItem('adminToken');
         const [usersRes, videosRes] = await Promise.all([
-          axios.get('https://mn-tech-pvltd-596-1.onrender.com/api/users', {
+          axios.get('https://mn-tech-pvltd-596.onrender.com/api/users', {
             headers: { Authorization: `Bearer ${token}` }
           }),
-          axios.get('https://mn-tech-pvltd-596-1.onrender.com/api/video_upload', {
+          axios.get('https://mn-tech-pvltd-596.onrender.com/api/video_upload', {
             headers: { Authorization: `Bearer ${token}` }
           })
         ]);

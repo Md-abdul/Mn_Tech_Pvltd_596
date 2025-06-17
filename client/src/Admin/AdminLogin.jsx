@@ -26,7 +26,7 @@ const AdminLogin = () => {
 
     try {
       const response = await axios.post(
-        "https://mn-tech-pvltd-596-1.onrender.com/api/admin/login",
+        "https://mn-tech-pvltd-596.onrender.com/api/admin/login",
         { email, password }
       );
 

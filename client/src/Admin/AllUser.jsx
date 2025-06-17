@@ -28,7 +28,7 @@ const AllUser = () => {
       setLoading(true);
       const token = localStorage.getItem("adminToken");
       const response = await axios.get(
-        `https://mn-tech-pvltd-596-1.onrender.com/api/users?page=${page}`,
+        `https://mn-tech-pvltd-596.onrender.com/api/users?page=${page}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }

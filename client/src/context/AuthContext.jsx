@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
       const userIdStr = userId.toString();
 
       const response = await axios.get(
-        `https://mn-tech-pvltd-596-1.onrender.com/api/users/${userIdStr}`,
+        `https://mn-tech-pvltd-596.onrender.com/api/users/${userIdStr}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ export const AuthProvider = ({ children }) => {
       if (token) {
         // Call the backend logout endpoint
         await axios.post(
-          "https://mn-tech-pvltd-596-1.onrender.com/api/users/logout",
+          "https://mn-tech-pvltd-596.onrender.com/api/users/logout",
           {},
           {
             headers: {
