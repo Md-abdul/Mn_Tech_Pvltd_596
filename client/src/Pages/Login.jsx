@@ -25,7 +25,13 @@ const Login = () => {
       }
       localStorage.removeItem("referralCode");
       login(token, userId);
-      navigate("/profile");
+      navigate("/auth-redirect", { 
+      replace: true,
+      state: { 
+        from: location.state?.from || "/profile" 
+      }
+    });
+    return;
     }
 
     // Redirect if already logged in

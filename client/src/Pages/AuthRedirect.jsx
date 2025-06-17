@@ -68,7 +68,7 @@ const AuthRedirect = () => {
         localStorage.setItem("user", JSON.stringify(userData));
         
         // Update auth context
-        login(token, userData);
+        login(token, userId);
         
         // Redirect to home or previous protected page
         const from = location.state?.from?.pathname || "/";
