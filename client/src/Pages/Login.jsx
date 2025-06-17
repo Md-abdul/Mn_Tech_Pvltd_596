@@ -75,7 +75,7 @@ const Login = () => {
 
     const state = referralCode ? JSON.stringify({ referralCode }) : undefined;
 
-    const backendUrl = "http://localhost:3001";
+    const backendUrl = "https://mn-tech-pvltd-596.onrender.com";
     window.location.href = `${backendUrl}/auth/google${
       state ? `?state=${encodeURIComponent(state)}` : ""
     }`;
