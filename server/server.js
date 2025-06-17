@@ -24,17 +24,35 @@ connectDB();
 //     credentials: true,
 //   })
 // );
+const allowedOrigins = [
+  "https://manglantechnology.netlify.app", // Production frontend
+  "http://localhost:5173", // Local frontend
+  process.env.FRONTEND_URL // From environment variable
+];
 
-// Middleware
-app.use(
-  cors({
-    origin: [
-      process.env.CLIENT_URL || "https://mn-tech-pvltd-596-1.onrender.com",
-      "https://manglantechnology.netlify.app/",
-    ],
-    credentials: true,
-  })
-);
+const corsOptions = {
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    
+    // Check for subdomains if needed (optional)
+    const originHostname = new URL(origin).hostname;
+    if (originHostname.endsWith('.netlify.app')) {
+      return callback(null, true);
+    }
+    
+    callback(new Error('Not allowed by CORS'));
+  },
+  credentials: true,
+  optionsSuccessStatus: 200 // For legacy browser support
+};
+
+app.use(cors(corsOptions));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
