@@ -1,0 +1,98 @@
+export const Houses = [
+  {
+    id: 1,
+    title: "Hotel Lord Krishna",
+    location: "India",
+    continent: "Asia",
+    rating: "4.5/5",
+    price: "₹ 2,500",
+    originalPrice: "₹ 120",
+    description:
+      "A luxurious stay with modern amenities and excellent hospitality. Located in the heart of the city, it offers easy access to major attractions.",
+    img: "https://images.trvl-media.com/lodging/15000000/14830000/14827900/14827855/6176f7ee.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+  },
+  {
+    id: 2,
+    title: "Hotel KG Palace",
+    location: "India",
+    continent: "Asia",
+    rating: "4.2/5",
+    price: "₹ 1,200",
+    originalPrice: "₹ 110",
+    description:
+      "Experience royal treatment at KG Palace, known for its elegant architecture and top-notch services.",
+    img: "https://r1imghtlak.ibcdn.com/8f52bf38-0732-4bf3-b301-015b3a1613c2.jpg?&output-quality=75&downsize=520:350&crop=520:350;2,0&output-format=jpg",
+  },
+  {
+    id: 3,
+    title: "Hotel Bhagwati Niwas",
+    location: "India",
+    continent: "Asia",
+    rating: "4.0/5",
+    price: "₹ 2,000",
+    originalPrice: "₹ 100",
+    description:
+      "A budget-friendly hotel offering comfortable stays with a touch of traditional hospitality.",
+    img: "https://content.jdmagicbox.com/v2/comp/delhi/k4/011pxx11.xx11.160919152136.v6k4/catalogue/indo-continental-pahar-ganj-delhi-hotels-rs-1001-to-rs-2000--vrvnflw5nx.jpg",
+  },
+  {
+    id: 4,
+    title: "Delhi Fab",
+    location: "India",
+    continent: "Asia",
+    rating: "4.3/5",
+    price: "₹ 1,000",
+    originalPrice: "₹ 105",
+    description:
+      "A modern hotel in Delhi, perfect for business and leisure travelers alike.",
+    img: "https://th.bing.com/th/id/OIP.MkkQY4yfzdVjYtuyZyP6gAHaE6?rs=1&pid=ImgDetMain",
+  },
+  {
+    id: 5,
+    title: "Indo Continental",
+    location: "India",
+    continent: "Asia",
+    rating: "4.4/5",
+    price: "₹ 1,000",
+    originalPrice: "₹ 115",
+    description:
+      "A blend of contemporary design and traditional warmth, offering a memorable stay.",
+    img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/357662827.jpg?k=34191f7ef03fa1b685f39d52ee772485a4153356ad6bd3207d58bd0a6512d70c&o=&hp=1",
+  },
+  {
+    id: 6,
+    title: "Kedareswar",
+    location: "India",
+    continent: "Asia",
+    rating: "4.1/5",
+    price: "₹ 1,000",
+    originalPrice: "₹ 95",
+    description:
+      "A serene retreat with a spiritual vibe, ideal for those seeking peace and tranquility.",
+    img: "https://pimg.fabhotels.com/big/458-7325-20161003053500.jpg",
+  },
+  {
+    id: 7,
+    title: "Hotel Royal Retreat",
+    location: "India",
+    continent: "Asia",
+    rating: "4.6/5",
+    price: "₹ 1,200",
+    originalPrice: "₹ 130",
+    description:
+      "A luxurious retreat offering world-class amenities, spa services, and fine dining. Perfect for a relaxing getaway.",
+    img: "https://th.bing.com/th/id/OIP.6tuFTFM_q5rUmXEzY8hglwHaE7?w=1024&h=682&rs=1&pid=ImgDetMain",
+  },
+  {
+    id: 8,
+    title: "Hotel Green Valley",
+    location: "India",
+    continent: "Asia",
+    rating: "4.0/5",
+    price: "₹ 3,500",
+    originalPrice: "₹ 90",
+    description:
+      "Nestled amidst lush greenery, this hotel offers a peaceful environment with modern comforts and eco-friendly practices.",
+    img: "https://pimg.fabhotels.com/propertyimages/690/images/photos-fabhotel-corporate-park-new-delhi-Hotels_1675773860570.jpg",
+  },
+];

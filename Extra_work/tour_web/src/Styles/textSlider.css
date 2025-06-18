@@ -1,0 +1,27 @@
+.text-slider-container {
+  background: white; /* Blue to purple gradient */
+  overflow: hidden; /* Hide content outside the container */
+  white-space: nowrap; /* Prevent wrapping of text */
+  padding: 16px; /* Add spacing */
+}
+
+.text-slider {
+  display: inline-flex; /* Align items horizontally */
+  gap: 64px; /* Spacing between each text */
+  animation: scroll 10s linear infinite; /* Infinite smooth scrolling animation */
+}
+
+.text-slider span {
+  font-size: 1.125rem; /* Text size (18px) */
+  font-weight: 600; /* Semi-bold text */
+  color: white; /* White text for visibility */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  to {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
