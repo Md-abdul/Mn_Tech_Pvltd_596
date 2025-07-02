@@ -7,8 +7,8 @@ import axios from "axios";
 import { useAdminAuth } from "../context/AdminAuthContext";
 
 const AdminLogin = () => {
-  const [email, setEmail] = useState("admin@maglantech.com");
-  const [password, setPassword] = useState("admin@maglantech.com");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   // const navigate = useNavigate();
@@ -18,7 +18,7 @@ const AdminLogin = () => {
   // useEffect(() => {
   //   const token = localStorage.getItem("adminToken");
   //   console.log("Current token in localStorage:", token);
-  // }, []);
+  // }, []);admin@maglantech.com
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -170,14 +170,14 @@ const AdminLogin = () => {
                   </label>
                 </div>
 
-                <div className="text-sm">
+                {/* <div className="text-sm">
                   <a
                     href="#"
                     className="font-medium text-indigo-600 hover:text-indigo-500 transition-colors"
                   >
                     Forgot password?
                   </a>
-                </div>
+                </div> */}
               </div>
 
               <div>

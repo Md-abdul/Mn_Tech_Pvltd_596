@@ -2,6 +2,7 @@ import React from "react";
 // import Navbar from "../Components/Navbar";
 import Headers from "../Components/Headers";
 import FAQComponent from "./FAQComponent";
+import ServicesLandingPage from "./ServicesLandingPage";
 
 export const Home = () => {
   return (
@@ -80,6 +81,8 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      <ServicesLandingPage />
 
       {/* Why We're Different Section */}
       <section id="why-us" className="py-16 bg-gray-100 px-4">
