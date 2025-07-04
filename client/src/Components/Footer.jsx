@@ -22,19 +22,22 @@ const Footer = () => {
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <Link to={'login'}></Link>
+                <Link to='/login'></Link>
                 <a href="" class="hover:underline me-4 md:me-6">
                   Login
                 </a>
               </li>
               
-              <li>
+              {/* <li>
                 <a href="#" class="hover:underline">
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 -mb-5 font-bold">
+            For More Information Contact Us :- 9674387425
+          </span>
           <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2025{" "}

@@ -40,7 +40,7 @@ const AuthRedirect = () => {
 
         setStatus("Fetching your profile...");
         const response = await axios.get(
-          `${import.meta.env.VITE_API_BASE_URL || 'https://mn-tech-pvltd-596.onrender.com'}/api/users/${userId}`,
+          `${import.meta.env.VITE_API_BASE_URL || 'https://mn-tech-pvltd-596.vercel.app'}/api/users/${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

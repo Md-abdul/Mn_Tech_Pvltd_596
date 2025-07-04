@@ -103,6 +103,7 @@ const Navbar = () => {
               height="70"
               className="hover:opacity-90 transition-opacity"
             />
+            MAGLAN TECHNOLOGY
           </Link>
 
           {user ? (
